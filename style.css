@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+    --background-color: hsl(240deg, 80%, 100%);
+    --secondary-color:hsl(225, 85%, 57%);
+    --text-color:hsl(240deg, 95%, 8%);
+    --intro-color:hsl(0,0%,85%);
+--shadow-color:hsl(225 10% 83%);
+--shadow-color-dark:hsl(225 10% 63%);
+
+--spacing-regular:16px;
+--spacing-small:calc(var(var(--spacing-regular))/2);
+
+--font-size-small:0.5rem;
+--font-size-medium:1rem;
+--font-size-large:1.5rem;
+--font-size-XL:2rem;
+}
+body{
+    margin: 0;
+    background-color: var( --background-color);
+    color:var(--text-color);
+    font-size: var(--font-size-large);
+}
+header{
+    padding: 20px;
+    position: sticky;
+    top: 0%;
+    background:var(--background-color);
+    z-index: 1;
+    border-bottom: 1px solid;
+}
+.default-nav {
+  display: flex;
+  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+.default-nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav >a{
+    list-style:  none;
+    color: inherit;
+    font-size: var(--font-size-medium);
+}
+body.dark-theme {
+    --background-color: hsl(240deg, 80%, 5%);
+    --text-color: hsl(240deg 95% 100%);
+    --intro-color: hsl(0, 0%, 18%);
+  }
+  
+nav ul li>a{
+    text-decoration: none;
+}
+header>nav>a{
+    margin: 50px;
+    text-decoration: none;
+}
+header>nav>a:last-child{
+    margin-right: revert;
+}
+
+header>nav>a:hover{
+    text-decoration: underline;
+    color:var(--secondary-color);
+
+}
+
+.container{
+padding: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.start{
+    margin: -16px;
+    padding: 16px;
+    background-color:var(--intro-color) ;
+    color: beige;
+    text-align: center;
+}
+
+
+.social img{
+ width: 30px;
+ height: 30px;
+ text-decoration: none;
+filter: none;
+}
+.social a{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+}
+.tech table,tr,th,td{
+border: 1px solid;
+border-collapse: collapse;
+padding: 16px;
+width: 100em;
+
+}
+.start img{
+    width: 300;
+    height: 300;
+    border-radius: 40px;
+    filter: drop-shadow(6px 7px 8px royalblue);
+}
+.quad {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#dynamic{
+    color: royalblue;
+} 
+#dynamic{
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+form#contact{
+    max-width: 400px;
+    margin:auto;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+#contact label{
+    display: block;
+    font-weight: 600;
+    font-size: var(--font-size-medium);
+}
+#contact input:focus{
+    outline: 2px solid blue;
+}
+#contact textarea:focus{
+    outline: 2px solid blue;
+}
+#techno{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    
+    gap: var(--spacing-regular) ;
+
+}
+.card:hover{
+    box-shadow: 3px 3px 14px 8px var(--shadow-color-dark);
+    transform: translateY(calc(-1 * 8px));
+    transition: transfprm 0.45s ease-in,box-shadow 0.4s ease-in-out;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 14px 5px var(--shadow-color);
+border: 1px solid white;
+padding: var(--spacing-regular);
+border-radius: var(--spacing-regular);
+}
+.card header h1{
+    text-align: center;
+    margin: 0px;
+}
+#contact input,#contact textarea,#contact button{
+    width: 100%;
+}
+.card ul{
+list-style: none;
+}
+.mobile-nav,section.menu{
+    display: none;
+}
+@media(width<830px){
+    .default-nav{
+        display: none;
+    }
+.mobile-nav{
+    display: revert;
+
+}
+
+section.menu ul>li{
+    margin-bottom: 24px;
+    
+}
+
+section.menu{
+        display: revert;
+        height: 0;
+        width: 100%;
+        overflow:hidden;
+        overflow: hidden;
+        position: fixed;
+        top:0;
+        z-index: 2;
+        background: var(--background-color);
+        
+        transition: height 0.8s ease-in-out;
+
+}
+section.menu ul{
+    list-style: none;
+    }
+#close-menu{
+ color: var(--text-color);
+    font: x-large;
+    border: none;
+}
+
+}
+#button{
+    background: transparent;
+    display: block;
+    border-radius: 8px;
+    margin-left: auto;
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+
+@media(width<=450px){
+    #profile photo{
+        width: 100%;
+    }
+}
+@media (prefers-color-scheme:dark){
+    body{
+       
+        --background-color: hsl(240deg, 80%, 5%);
+        --text-color:hsl(240deg, 95%, 100%);
+        --intro-color:hsl(0,0%,18%);
+    
+    }
+}
+body.light-theme {
+    --background-color: hsl(240deg, 80%, 100%);
+    --text-color: hsl(240deg 95% 8%);
+    --intro-color: hsl(0, 0%, 85%);
+  }

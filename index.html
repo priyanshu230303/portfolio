@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+</head>
+<body>
+  <section class="menu">
+    <button id="close-menu">&times;</button>
+    <nav>
+      <ul>
+      <li>  <a href="#about-me">about me</a></li>
+       <li> <a href="#quali">Qualification</a></li>
+       <li> <a href="#hobbies">Hobbies</a></li>
+       <li> <a href="#techno">Technologies</a></li>
+       <li> <a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </section>
+  <header>
+    <nav class="default-nav">
+      <section>
+        <a href="#about-me">About Me</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a href="#technologies">Technologies</a><a href="#contact-me">Contact</a>
+      </section>
+      <section>
+        <button id="theme-switcher"></button>
+      </section>
+   </nav>
+    <nav class="mobile-nav">
+      <button id="button">menu</button>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="start">
+    <img  id="profie photo" width="300px" height="300px" src="photoo.png " > 
+    <h1>HI,its priyanshu</h1>
+    <p>i am <span id="dynamic"></span></p>
+    <div class="social">
+    <a href="https://www.instagram.com/_priyanshu__03/" target="_blank">
+      <img  src="https://th.bing.com/th/id/OIP.HZbUWA_dOB4Zt9dJx1vAyQHaEK?w=289&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+      </a>
+      <a href="https://www.linkedin.com/in/priyanshu-tripathi-93363a234/" target="_blank">
+        <img  src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png">
+      </a>
+    </div>
+    
+  </div>
+  <div id="aboutme" class="second">
+    <h2 id="about-me">ABOUT ME</h2>
+  <p title="that is a small info"><b>I am a student of shri shankaracharya technical campus bhilai persuing my btech carrer here i am learning basics of HTML</b></p> 
+  <p><b>here i am in devnest to learn something about my carrier</b></p> 
+  <p><b>i am learning form gaurav sir</b></p>
+  </div>
+  <hr>
+  <div class="quad">
+  <h2 id="quali">Qualification</h2>
+  <ol>
+    <li>B tech cse</li>
+    <li>web devolpment</li>
+  </ol>
+  </div>
+  <div class="hobb"></div>
+  <h2 id="hobbies">Hobbies</h2>
+  <ul>
+    <li>volleyball</li>
+    <li>coding</li>
+    </ul>
+  </ul>
+  <hr>
+  <div class="tech">
+  <h2 >Technologies</h2>
+  <section id="techno">
+    <section class="card">
+      <header>
+        <h1>frontend</h1>
+      </header>
+      <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JS</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header>
+        <h1>backend</h1>
+      </header>
+      <ul>
+        <li>node js</li>
+        <li>ASP.net</li>
+        <li>rails</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header>
+        <h1>servers</h1>
+      </header>
+        <ul>
+          <li>mongo db</li>
+          <li>postgres</li>
+          <li>my SQL</li>
+        </ul>
+      
+    </section>
+  </section>
+
+  </div>
+  </div>
+  <hr>
+  <form name="contact" id="contact" method="post">
+    <h1>contact me</h1>
+  <div>
+      <label for="firstName">firstName</label>
+      <input type="text" name="firstName" id="firstName"/></label>
+    </div>
+    <div>
+      <label for="lastName">firstName</label>
+      <input type="text" name="lastName" id="lastName"/></label>
+    </div>
+    <div>
+      <label for="message">message</label>
+      <textarea name="message" id="message" cols="30" row="10"></textarea>
+    </div>
+    <button type="submit">send</button>
+  </form>
+  <script src="menu.js"></script>
+  <script src="main.js"></script>
+  <script src="theme.js"></script>
+</body> 
+</html>
